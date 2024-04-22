@@ -133,7 +133,10 @@
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
-      layoutMode: 'fitRows'
+      //layoutMode: 'fitRows'
+      masonry: {
+        horizontalOrder: true
+      }
     });
 
     $('#portfolio-flters li').on('click', function() {
